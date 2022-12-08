@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #202125;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body main{
+    border: 1px solid #333;
+    margin: auto;
+    text-align: center;
+    width: 50%;
+    margin-top: 170px;
+    border-radius: 10px;
+}
+/* header timer style  */
+main .header{
+    display: flex;
+    justify-content: space-around;
+    /* padding: 15px; */
+    border-bottom: 1px solid #333;
+    text-transform: uppercase;
+}
+.header div{
+    width: 100%;
+    padding: 20px;
+    color: #80868b;
+    cursor: pointer;
+}
+.header div:hover{
+    color: #fff;
+}
+.header .active{
+    color:  #8ab4f8!important;
+    width: 100%;
+    border-bottom: 2px solid #8ab4f8;
+}
+
+/* content timer style  */
+.content{
+    color: #fff;
+    width: fit-content;
+    padding: 20px;
+    font-size: 40px;
+    position: relative;
+}
+.content div{
+    margin: 20px;
+
+}
+.stop-watch-counter{
+    display: none;
+}
+.content .hr , .content .stop-watch-counter .min{
+    display: none;
+}
+.content input{
+    background-color: transparent;
+    border: none;
+    font-size: 40px;
+    display: none;
+}
+.timeline{
+    position:absolute;
+    border-bottom: 3px solid #8ab4f8;
+    /* width: 770px; */
+    width: 0;
+    left: -20px;
+    bottom: -20px;
+}
+/* footer timer style  */
+.footer{
+    display: flex;
+    justify-content: space-between;
+    padding:20px;
+    align-items: center;
+    border-top: 1px solid #333;
+}
+.footer div button{
+    padding: 5px 10px;
+    text-transform: uppercase;
+    margin-right: 10px;
+    font-weight: bold;
+    color:  #202124;
+    cursor: pointer;
+}
+.footer div #start{
+    background-color: #8ab4f8;
+    border:1px solid #8ab4f8;
+}
+.footer #start:focus{
+    background-color:#1B5FB9;
+    border-color: #1B5FB9;
+}
+.footer #start:hover{
+    background-color:  #1B66C9;
+    border-color:  #1B66C9;
+}
+.footer #reset{
+    background-color: #bdc1c6;
+    border:1px solid #3c4043;
+}
+.footer #reset:hover{
+    background-color: #171717;
+    border-color: #050607;
+}
+.footer #reset:focus{
+    background-color: #394457;
+    border-color: #08101e;
+}
+.footer div:nth-child(2){
+    display: flex;
+    align-items: center;
+
+}
+.footer div img{
+    margin-right :20px;
+}
+.footer div img , .footer i{
+    filter: invert(1);
+    cursor: pointer;
+}
+.expand{
+    width: 95%;
+    height: 100%;
+}
