@@ -61,6 +61,11 @@ main .header{
     border: none;
     font-size: 40px;
     display: none;
+    color: #fff;
+}
+.content input:focus{
+    border: none;
+    outline: none;
 }
 .timeline{
     position:absolute;
