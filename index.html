@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Timer</title>
+    <!-- font awesome link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- style link  -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <!-- timer header -->
+        <div class="header">
+            <div class="timer active"><i class="fa-regular fa-hourglass"></i> timer</div>
+            <div class="stopwatch"><i class="fa-solid fa-clock"></i> stopwatch</div>
+        </div>
+        <!-- end timer header  -->
+
+
+        <!-- timer content  -->
+        <div class="content">
+            <div id="timer-counter">
+                <span class="hr"><span class="timer_hours">00</span>h
+            </span>
+                <span class="time_minutes">5</span>m
+                <span class="time_sec">00</span>s
+                <input type="tel" maxlength="6" placeholder="00 00 00" id="timer-input">
+                <div class="timeline"></div>
+            </div>
+
+
+            <!-- stop match -->
+            <div class="stop-watch-counter">
+                <span class="hr"><span class="hour">0</span>hr</span>
+                <span class="min"><span class="minute">0</span>m</span>
+                <span class="second">0</span>s
+                <span class="m-second">00</span>
+            </div>
+        </div>
+        <!-- end timer content  -->
+
+        <!-- timer footer  -->
+        <div class="footer">
+            <div>
+                <button id="start">start</button>
+                <button id="reset">reset</button>
+            </div>
+            <div>
+                <img src="sound.png" alt="sound" width="24px">
+                <i class="fa-solid fa-expand"></i>
+            </div>
+        </div>
+        <!-- end timer footer  -->
+    </main>
+    <script src="main.js"></script>
+</body>
+</html>
