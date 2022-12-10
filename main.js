@@ -82,14 +82,14 @@ function startTimer(){
 }
 
 //counterDown function 
-const startMin = 5;
+let startMin = 5;
 let time = startMin *60;
 let secnd;
 const timeMin = document.querySelector('.time_minutes');
 const timeSec = document.querySelector('.time_sec');
 function updateCountdown(){
     const minutes = Math.floor(time/60);
-    secnd =time% 60;
+    secnd =time%60;
     secnd= secnd<10?'0'+secnd:secnd;
     timeMin.innerHTML = minutes;
     timeSec.innerHTML = secnd;
@@ -245,10 +245,11 @@ resetBtn.addEventListener('click',()=>{
 
     // timer counter reset
     clearInterval(timeOf);
-        // startMin=5;
-        // secnd=0;
-        timeMin.innerHTML = startMin;
-        timeSec.innerHTML = second;
+        startMin=5;
+        secnd=0;
+        time = startMin *60;
+        timeMin.innerHTML = time/60;
+        timeSec.innerHTML = `0${secnd}`;
 
 
     //input timer reset
