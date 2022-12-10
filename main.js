@@ -94,9 +94,9 @@ function updateCountdown(){
     timeMin.innerHTML = minutes;
     timeSec.innerHTML = secnd;
     time--;
-    let timeLineWidth = timeline.offsetWidth;
-    timeLineWidth = timeLineWidth+2.03;
-    timeline.style.width = `${timeLineWidth}px`;
+    // let timeLineWidth = timeline.offsetWidth;
+    // timeLineWidth = timeLineWidth+(100%-(time));
+    // timeline.style.width = `${timeLineWidth}px`;
 }
 
 
@@ -137,7 +137,6 @@ const secInputArrElem = secondsInput.querySelector('.num');
 const minInputArrElem = minutesInput.querySelector('.num');
 const horsInputArrElem = hoursInput.querySelector('.num');
 function handelTime (timeStr) {
-    {
         let time = [];
         if(timeStr.length % 2 != 0){
             time.push(`0${timeStr[0]}`);
@@ -184,18 +183,22 @@ function handelTime (timeStr) {
     
         if(hrs)
             horsInputArrElem.textContent = hrs;
-        }}
 
-
-
+        //     if(hrs){
+        //         let starthr=hrs;
+        //         let time = starthr*60*60;
+        //     function countdownInput(){
+        //         const min = Math.floor(time%60);
+        //         const sec=min%60;
+        //         time--;
+        //         secInputArrElem.textConten=sec;
+        //         minInputArrElem.textContent = min;
+        //         horsInputArrElem.textContent = starthr;
+        //     }
+        // }
+        }
+        
 ////////////////////////timer input action countdown////////////////////////////////
-
-
-
-
-
-
-
 
 
 
@@ -253,12 +256,16 @@ resetBtn.addEventListener('click',()=>{
 
 
     //input timer reset
+    timerInputHidden.value=00;
     hrs=0;
     minu=0;
     seco=0;
     secInputArrElem.textContent = `0${seco}`;
     minInputArrElem.textContent = `0${minu}`;
     horsInputArrElem.textContent = `0${hrs}`;
+    timerInput.style.display='none';
+    timerPart.style.display='block';
+    timerInputHidden.style.display='none';
 });
 
 
