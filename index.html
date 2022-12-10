@@ -23,21 +23,42 @@
         <!-- timer content  -->
         <div class="content">
             <div id="timer-counter">
-                <div class="timer-counter-displsy"><span class="hr"><span class="timer_hours">00</span>h
+                <div class="timer-counter-displsy">
+                    <span class="hr"><span class="timer_hours num">00</span> h
                 </span>
-                    <span class="time_minutes">5</span>m
-                    <span class="time_sec">00</span>s</div>
-                <input type="tel" maxlength="6" placeholder="00 00 00" id="timer-input">
+                        <span class="time_minutes num">5</span> 
+                        <span class="char">m</span>
+                        <span class="time_sec num">00</span>
+                        <span class="char">s</span>
+                </div>
+                <label for="timerInputHidden" class="timeInput">
+                    <span class="hours unit">
+                        <span class="num time">00</span>
+                        <span class="char">h</span>
+                    </span>
+                    <span class="minutes unit">
+                        <span class="num time">00</span>
+                        <span class="char">m</span>
+                    </span>
+                    <span class="seconds unit">
+                        <span class="num time">00</span>
+                        <span class="char">s</span>
+                    </span>
+                </label>
+                <input type="tel" maxlength="6" id="timerInputHidden">
                 <div class="timeline"></div>
             </div>
-
-
             <!-- stop match -->
             <div class="stop-watch-counter">
-                <span class="hr"><span class="hour">0</span>hr</span>
-                <span class="min"><span class="minute">0</span>m</span>
-                <span class="second">0</span>s
-                <span class="m-second">00</span>
+                <span class="hr"><span class="hour num">0</span>
+                <span class="char">hr</span>
+            </span>
+                <span class="min"><span class="minute num">0</span>
+                <span class="char">m</span>
+            </span>
+                <span class="second num">0</span>
+                <span class="char">s</span>
+                <span class="m-second num">00</span>
             </div>
         </div>
         <!-- end timer content  -->
